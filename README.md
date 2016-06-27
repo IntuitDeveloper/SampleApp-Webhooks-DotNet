@@ -78,7 +78,9 @@ Generic cmd- ngrok http <<port>> -host-header=”localhost:<<port>>”
 21.	You can keep this ngrok.exe and http://92832de0.ngrok.io url running along with fiddler to track notifications are received after every 5 mins if there are changes as frequent.
 
 **For Azure based cloud testing of the sample app-**
-**You should have a valid Azure subscription to test this.** 
+
+**Note:You should have a valid Azure subscription to test this.** 
+
 1.	Build the the project. Resolve any dll conflicts using Nuget Package Manager.
 2.	Comment out the logging code in the DataServiceFactory.
 	
@@ -96,7 +98,8 @@ Generic cmd- ngrok http <<port>> -host-header=”localhost:<<port>>”
 11.	Then from left side go to ->Server explorer->Azure->SQL databases->Right click your DB ->SQL Server Object Explorer.
 12.	Open the Webhooks Db that you just now created on Azure from SQL Server Object Explorer.
 13.	Right click on Tables->Add new table and then run this script
-CREATE TABLE /[dbo]./[OAuthTokens] (
+
+CREATE TABLE \[dbo].\[OAuthTokens] (
     [Id]               INT            IDENTITY (1, 1) NOT NULL,
     [realmid]          NVARCHAR (MAX) NOT NULL,
     [realmlastupdated] DATETIME       NOT NULL,
