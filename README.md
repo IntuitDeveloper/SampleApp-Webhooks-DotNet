@@ -57,7 +57,7 @@ Once the sample app code is set on your computer, you can do the following steps
 4.	Run your sample app to see what port is displayed on the browser.
 5.	Suppose it is running on http://localhost:49304/. After this, save this  port information in a text file and then you need stop the sample app.
 6.	Run ngrok.exe and then type the following cmd-
-7.	
+	
 ngrok http 49304 -host-header="localhost:49304"
 
 (Here my sample app’s port number was 49304. In your case it might be different. So change the values below in port to the value you have saved from step 3.)
@@ -66,7 +66,7 @@ Generic cmd- ngrok http <<port>> -host-header=”localhost:<<port>>”
 
 7.	Then you will get a mapping url in the ngrok cmd prompt-
 	
-          Forwarding       http://92832de0.ngrok.io -> localhost:49304
+Forwarding       http://92832de0.ngrok.io -> localhost:49304
 
 8.	Copy the url http://92832de0.ngrok.io and paste it in browser and run it. You will get a bad gateway or some other error. Ignore it. Do not close the browser.
 9.	Copy this same url http://92832de0.ngrok.io as the webhooks url for the app on developer.intuit.com and save.
