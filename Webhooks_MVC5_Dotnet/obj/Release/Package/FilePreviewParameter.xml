@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="WebhooksMVC5DotnetTest" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\nshrivastava\\Documents\\Visual\ Studio\ 2013\\Projects\\Webhooks_MVC5_Dotnet\ -\ Local\\Webhooks_MVC5_Dotnet\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\nshrivastava\\Documents\\Visual\ Studio\ 2013\\Projects\\Webhooks_MVC5_Dotnet\ -\ Local\\Webhooks_MVC5_Dotnet\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DBContext-Web.config Connection String" description="" value="data source=tcp:webhooksserver.database.windows.net,1433;initial catalog=WebhooksMVC5DotnetTest_db;user id=nemo@webhooksserver;password=dimpy@5784;MultipleActiveResultSets=False" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\nshrivastava\\Documents\\Visual\ Studio\ 2013\\Projects\\Webhooks_MVC5_Dotnet\ -\ Local\\Webhooks_MVC5_Dotnet\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DBContext']/@connectionString" />
+  </parameter>
+  <parameter name="Webhooks.Models.DTO.OAuthRealmLastUpdateddataContext-Web.config Connection String" description="" value="Data Source=tcp:webhooksserver.database.windows.net,1433;Initial Catalog=WebhooksMVC5DotnetTest_db;User Id=nemo@webhooksserver;Password=dimpy@5784" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\nshrivastava\\Documents\\Visual\ Studio\ 2013\\Projects\\Webhooks_MVC5_Dotnet\ -\ Local\\Webhooks_MVC5_Dotnet\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Webhooks.Models.DTO.OAuthRealmLastUpdateddataContext']/@connectionString" />
+  </parameter>
+</parameters>
