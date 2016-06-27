@@ -48,7 +48,9 @@ In order to successfully run this sample app you need a few things:
 ----------------------------
 For webhooks, it is a requirement that your subscribe curl should be exposed over internet. It can be a rest endpoint or an azure app service. In the sample app we have, I will demonstrate both azure and localhost based testing for the webhooks. 
 Once the sample app code is set on your computer, you can do the following steps to run the app:
+
 **For Ngrok based local testing of the sample app-**
+
 1.	Build the the project. Resolve any dll conflicts using Nuget Package Manager.
 2.	Run the initial scripts for adding sandbox apptokens to the LocalDB->OAuthTokens table from Scripts->InsertScriptWebhooks.sql
 3.	Download ‘ngrok.exe’ from https://ngrok.com/. This will help in mapping the localhost port of the sample app to the ngrok url exposed over internet.
@@ -79,9 +81,10 @@ Generic cmd- ngrok http <<port>> -host-header=”localhost:<<port>>”
 **You should have a valid Azure subscription to test this.** 
 1.	Build the the project. Resolve any dll conflicts using Nuget Package Manager.
 2.	Comment out the logging code in the DataServiceFactory.
+	
 //serviceContext.IppConfiguration.Logger.RequestLog.EnableRequestResponseLogging = true;
-            //serviceContext.IppConfiguration.Logger.RequestLog.ServiceRequestLoggingLocation = ConfigurationManager.AppSettings["ServiceRequestLoggingLocation"];
-            
+//serviceContext.IppConfiguration.Logger.RequestLog.ServiceRequestLoggingLocation = ConfigurationManager.AppSettings["ServiceRequestLoggingLocation"];
+
 3.	Build the project in release mode. Right click on the project. Do publish.
 4.	Go to Profile->Select a publish target->Microsoft Azure App service->Enter your Azure creds->Select subscription and create a New resource group if you do not have any.
 5.	The Hosting tab will then display your selected values.
