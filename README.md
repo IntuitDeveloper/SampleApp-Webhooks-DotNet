@@ -1,22 +1,31 @@
-# SampleApp-Webhooks-DotNet
+**# SampleApp-Webhooks-DotNet**
+---------------------------------
 
 This sample app is meant to provide working examples of how to integrate your app with the Intuit Small Business ecosystem. Specifically, this sample application demonstrates the following:
-*Implementing webhooks endpoint to receive event notifications.
-*Best practices to be followed while processing the event notifications.
-*Sample code using [QuickBooks Online SDK]( https://developer.intuit.com/docs/0100_accounting/0500_developer_kits/0010.net_tools/.net_sdk_for_quickbooks_v3.0) to call CDC API to sync data between the app and the QuickBooks Online company.
+
+* Implementing webhooks endpoint to receive event notifications.
+* Best practices to be followed while processing the event notifications.
+* Sample code using [QuickBooks Online SDK]( https://developer.intuit.com/docs/0100_accounting/0500_developer_kits/0010.net_tools/.net_sdk_for_quickbooks_v3.0) to call CDC API to sync data between the app and the QuickBooks Online company.
+
 Please note that while these examples work, features not called out above are not intended to be taken and used in production business applications. In other words, this is not a seed project to be taken cart blanche and deployed to your production environment.
+
 For example, certain concerns are not addressed at all in our samples (e.g. security, privacy, scalability). In our sample apps, we strive to strike a balance between clarity, maintainability, and performance where we can. However, clarity is ultimately the most important quality in a sample app.
+
 Therefore there are certain instances where we might forgo a more complicated implementation (e.g. caching a frequently used value, robust error handling, more generic domain model structure) in favor of code that is easier to read. In that light, we welcome any feedback that makes our samples apps easier to learn from.
+
 **Table of Contents**
 ----------------------------
-•	[Requirements](#Requirements)
-•	[First Use Instructions](#First Use Instructions)
-•	[Running the code](#Running the code)
-•	[Project Structure](#Project Structure)
-•	[Reset the App](#Reset the app)
+*	[Requirements](#Requirements)
+*	[First Use Instructions](#First Use Instructions)
+*	[Running the code](#Running the code)
+*	[Project Structure](#Project Structure)
+*	[Reset the App](#Reset the app)
+
+
 **Requirements**
 -----------------------
 In order to successfully run this sample app you need a few things:
+
 1.	Visual Studio 2013 with MVC5 and SQL server express 2012
 2.	A [developer.intuit.com]( https://developer.intuit.com/) account
 3.	An app on [developer.intuit.com]( https://developer.intuit.com/) and the associated app token, consumer key, and consumer secret.
@@ -34,6 +43,7 @@ In order to successfully run this sample app you need a few things:
 4.	Enable logging in the config file by updating the local folder path in web.config(ServiceRequestLoggingLocation).
 5.	Open the project from Visual Studio
 6.	Populate the data in to tables from /Scripts folder after modifying the values for your sandbox companies’ realmid, some default datetime, access token, access token secret, daatasource as QBO. Run it only once.
+
 **Running the code**
 ----------------------------
 For webhooks, it is a requirement that your subscribe curl should be exposed over internet. It can be a rest endpoint or an azure app service. In the sample app we have, I will demonstrate both azure and localhost based testing for the webhooks. 
@@ -107,24 +117,33 @@ It should look something like this.
 22.	Configure the cloud app url in the webhooks app on developer.intuit.com and you should start getting notifications on the sample app.
 23.	Make some changes in sandbox company and then go to the Webhooks Azure OAuthTokens in the sample app in SQL Server Object Explorer ->right click and do Show Data or do a New query->  Select * from OAuthTokens
 24.	You will see updated realmlastupdatedtime.
+
 **Project Structure**
 --------------------------------
 **Standard MVC5 template is used for the sample app**
+
 **Controller-**
-[HomeController.cs]( Webhooks_MVC5_Dotnet/Controllers/HomeController.cs)  (For receiving post of webhooks notifications from Intuit server)
+
+* [HomeController.cs]( Webhooks_MVC5_Dotnet/Controllers/HomeController.cs)  (For receiving post of webhooks notifications from Intuit server)
 
 **Models-**
+
 **DTO-**
-*[OAuthTokensRealmLastUpdateddto.cs]( Webhooks_MVC5_Dotnet/Models/DTO/OAuthTokensRealmLastUpdateddto.cs)  (Wrapper for OAuthTokens table data)
-*[WebhooksNotificationdto.cs]( Webhooks_MVC5_Dotnet/Models/DTO/WebhooksNotificationdto.cs)  (Wrapper for Webhooks Notifications from POST on the sample app’s url)
+
+* [OAuthTokensRealmLastUpdateddto.cs]( Webhooks_MVC5_Dotnet/Models/DTO/OAuthTokensRealmLastUpdateddto.cs)  (Wrapper for OAuthTokens table data)
+* [WebhooksNotificationdto.cs]( Webhooks_MVC5_Dotnet/Models/DTO/WebhooksNotificationdto.cs)  (Wrapper for Webhooks Notifications from POST on the sample app’s url)
+
 **Service-**
-*[DataServiceFactory.cs]( Webhooks_MVC5_Dotnet/Models/Service/DataServiceFactory.cs)  (For getting the ServiceContext object from App Keys and Tokens)
-*[CDCSyncService.cs]( Webhooks_MVC5_Dotnet/Models/Service/CDCSyncService.cs)  (For making CDC calls to QBO API) 
+
+* [DataServiceFactory.cs]( Webhooks_MVC5_Dotnet/Models/Service/DataServiceFactory.cs)  (For getting the ServiceContext object from App Keys and Tokens)
+* [CDCSyncService.cs]( Webhooks_MVC5_Dotnet/Models/Service/CDCSyncService.cs)  (For making CDC calls to QBO API) 
+
 **Utility-**
-*[ProcessNotificationData.cs]( Webhooks_MVC5_Dotnet/Models/Utility/ProcessNotificationData.cs)  (For Signature Verification of Webhooks payload and a separate thread implementation for queue processing of the webhooks data and cdc api calls for the realms)
-*[DBUtility.cs]( Webhooks_MVC5_Dotnet/Models/Utility/DBUtility.cs)  (For making DB calls for OAuthTokens)
+* [ProcessNotificationData.cs]( Webhooks_MVC5_Dotnet/Models/Utility/ProcessNotificationData.cs)  (For Signature Verification of Webhooks payload and a separate thread implementation for queue processing of the webhooks data and cdc api calls for the realms)
+* [DBUtility.cs]( Webhooks_MVC5_Dotnet/Models/Utility/DBUtility.cs)  (For making DB calls for OAuthTokens)
+
 **View-**
-*[Index.cshtml](Webhooks_MVC5_Dotnet/Views/Home/Index.cshtml)  (Displays default page for the Webhooks app)
+* [Index.cshtml](Webhooks_MVC5_Dotnet/Views/Home/Index.cshtml)  (Displays default page for the Webhooks app)
 
 **Reset the App**
 -----------------------
