@@ -109,6 +109,7 @@ CREATE TABLE \[dbo].\[OAuthTokens] (
     [datasource]       NVARCHAR (MAX) NULL,
     CONSTRAINT [PK_dbo.OAuthTokens] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
+
 14.	Do Update from Top menu. This will create the OAuthTokens table in Webhooks DB you created on Azure.
 15.	Then go to Azure Portal->SQL DB->WebHooks Databse->Settings->Get Ado.net connection string for this DB.
 16.	Go to the sample apps web.config. Change the LocalDB connectionstring to now map to Azure Webhooks DB.
