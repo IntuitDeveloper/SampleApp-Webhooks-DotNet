@@ -99,7 +99,6 @@ Generic cmd- ngrok http <<port>> -host-header=”localhost:<<port>>”
 11.	Then from left side go to ->Server explorer->Azure->SQL databases->Right click your DB ->SQL Server Object Explorer.
 12.	Open the Webhooks Db that you just now created on Azure from SQL Server Object Explorer.
 13.	Right click on Tables->Add new table and then run this script
-
 CREATE TABLE \[dbo].\[OAuthTokens] (
     [Id]               INT            IDENTITY (1, 1) NOT NULL,
     [realmid]          NVARCHAR (MAX) NOT NULL,
