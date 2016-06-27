@@ -63,14 +63,14 @@ ngrok http 49304 -host-header="localhost:49304"
 (Here my sample app’s port number was 49304. In your case it might be different. So change the values below in port to the value you have saved from step 3.)
 
 Generic cmd- ngrok http <<port>> -host-header=”localhost:<<port>>”
-
-7.	Then you will get a mapping url in the ngrok cmd prompt-
+7.	Run ngrok.exe and then type the following cmd-
+8.   Then you will get a mapping url in the ngrok cmd prompt-
 	
 Forwarding       http://92832de0.ngrok.io -> localhost:49304
 
-8.	Copy the url http://92832de0.ngrok.io and paste it in browser and run it. You will get a bad gateway or some other error. Ignore it. Do not close the browser.
-9.	Copy this same url http://92832de0.ngrok.io as the webhooks url for the app on developer.intuit.com and save.
-10.	Now add a breakpoint point at the start of your sample app in HomeController. 
+9.	Copy the url http://92832de0.ngrok.io and paste it in browser and run it. You will get a bad gateway or some other error. Ignore it. Do not close the browser.
+10.	Copy this same url http://92832de0.ngrok.io as the webhooks url for the app on developer.intuit.com and save.
+11.	Now add a breakpoint point at the start of your sample app in HomeController. 
 11.	Then run the sample app and it will open localhost:49304 on a second tab of the browser.
 12.	Close the localhost:49304 tab but the Visual Studio instance will keep running from IDE and the iis process will attach to http://92832de0.ngrok.io now.
 13.	 Do F10 for next 1 or 2 lines to make sure ngrok url is indeed attached to the iis process. 
