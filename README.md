@@ -1,4 +1,4 @@
-**# SampleApp-Webhooks-DotNet**
+**#SampleApp-Webhooks-DotNet**
 ---------------------------------
 
 This sample app is meant to provide working examples of how to integrate your app with the Intuit Small Business ecosystem. Specifically, this sample application demonstrates the following:
