@@ -122,6 +122,7 @@ It should look something like this.
 22.	Configure the cloud app url in the webhooks app on developer.intuit.com and you should start getting notifications on the sample app.
 23.	Make some changes in sandbox company and then go to the Webhooks Azure OAuthTokens in the sample app in SQL Server Object Explorer ->right click and do Show Data or do a New query->  Select * from OAuthTokens
 24.	You will see updated realmlastupdatedtime.
+25.	Note: By default, Azure already enables HTTPS for your app with a wildcard certificate for the *.azurewebsites.net domain. So, verify that https in indeed used for wbehooks.
 
 **Project Structure**
 --------------------------------
