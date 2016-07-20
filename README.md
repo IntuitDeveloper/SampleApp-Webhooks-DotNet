@@ -60,23 +60,23 @@ Once the sample app code is set on your computer, you can do the following steps
 ngrok http 49304 -host-header="localhost:49304"
 (Here my sample app’s port number was 49304. In your case it might be different. So change the values below in port to the value you have saved from step 3.)
 Generic cmd- ngrok http <<port>> -host-header=”localhost:<<port>>”
-7.	Then you will get a mapping url in the ngrok cmd prompt-
-          Forwarding       http://92832de0.ngrok.io -> localhost:49304
-
-8.	Copy the url http://92832de0.ngrok.io and paste it in browser and run it. You will get a bad gateway or some other error. Ignore it. Do not close the browser.
-9.	Copy this same url http://92832de0.ngrok.io as the webhooks url for the app on developer.intuit.com and save.
+7.	Then you will get a mapping https url in the ngrok cmd prompt-
+          Forwarding       https://92832de0.ngrok.io -> localhost:49304
+        (Do not use the http url rather only https as only that supports webhooks)
+8.	Copy the url https://92832de0.ngrok.io and paste it in browser and run it. You will get a bad gateway or some other error. Ignore it. Do not close the browser.
+9.	Copy this same url https://92832de0.ngrok.io as the webhooks url for the app on developer.intuit.com and save.
 10.	Now add a breakpoint point at the start of your sample app in HomeController. 
 11.	Then run the sample app and it will open localhost:49304 on a second tab of the browser.
-12.	Close the localhost:49304 tab but the Visual Studio instance will keep running from IDE and the iis process will attach to http://92832de0.ngrok.io now.
+12.	Close the localhost:49304 tab but the Visual Studio instance will keep running from IDE and the iis process will attach to https://92832de0.ngrok.io now.
 13.	 Do F10 for next 1 or 2 lines to make sure ngrok url is indeed attached to the iis process. 
 14.	Then remove the breakpoint and do F5(run).
 15.	This is it. You are now exposing the sample app over internet via ngrok url.
 16.	The WebHooks server can now send notifications to your sample app.
 17.	You can download fiddler from google and run it alongside your sample app. 
 18.	Make some changes in the sandbox company you have.
-19.	In about 5 mins, you can see fiddler logs the send a 200 response for the post on url  http://92832de0.ngrok.io and there is also a CDC request and response logged.
+19.	In about 5 mins, you can see fiddler logs the send a 200 response for the post on url  https://92832de0.ngrok.io and there is also a CDC request and response logged.
 20.	You can then go to the LocalDb table OAuthTokens in the sample app and right click and do Show Data or do a New query->  Select * from OAuthTokens. You will see the realmlastupdated date-time has changed to reflect the webhooks notifications received time.
-21.	You can keep this ngrok.exe and http://92832de0.ngrok.io url running along with fiddler to track notifications are received after every 5 mins if there are changes as frequent.
+21.	You can keep this ngrok.exe and https://92832de0.ngrok.io url running along with fiddler to track notifications are received after every 5 mins if there are changes as frequent.
 
 **For Azure based cloud testing of the sample app-**
 
