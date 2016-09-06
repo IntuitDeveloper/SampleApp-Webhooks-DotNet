@@ -5,7 +5,7 @@ This sample app is meant to provide working examples of how to integrate your ap
 
 * Implementing webhooks endpoint to receive event notifications.
 * Best practices to be followed while processing the event notifications.
-* Sample code using [QuickBooks Online SDK]( https://developer.intuit.com/docs/0100_accounting/0500_developer_kits/0010.net_tools/.net_sdk_for_quickbooks_v3.0) to call CDC API to sync data between the app and the QuickBooks Online company.
+* Sample code using [QuickBooks Online SDK]( https://developer.intuit.com/docs/0100_quickbooks_online/0400_tools/0005_accounting/0010.net_tools/0060_installing_the_.net_sdk) to call CDC API to sync data between the app and the QuickBooks Online company.
 
 Please note that while these examples work, features not called out above are not intended to be taken and used in production business applications. In other words, this is not a seed project to be taken cart blanche and deployed to your production environment.
 
@@ -29,7 +29,7 @@ In order to successfully run this sample app you need a few things:
 1.	Visual Studio 2013 with MVC5 and SQL server express 2012
 2.	A [developer.intuit.com]( https://developer.intuit.com/) account
 3.	An app on [developer.intuit.com]( https://developer.intuit.com/) and the associated app token, consumer key, and consumer secret.
-4.	[QuickBooks .NET SDK]( https://developer.intuit.com/docs/0100_accounting/0500_developer_kits/0010.net_tools/.net_sdk_for_quickbooks_v3.0) (already included in the sample app). You need to update/restore it using Nuget Package Manager
+4.	[QuickBooks .NET SDK]( https://developer.intuit.com/docs/0100_quickbooks_online/0400_tools/0005_accounting/0010.net_tools/0060_installing_the_.net_sdk) (already included in the sample app). You need to update/restore it using Nuget Package Manager
 5.	Two [sandbox]( https://developer.intuit.com/v2/ui#/sandbox) companies, connect both companies with your developer.intuit.com->QBO app and generate the oauth tokens using existing sample apps or OAuth Playground. (The tokens and app keys would be required for saving the tokens in the webhooks sample app and testing the notification for the sandbox company.)
 6.	[Fiddler]( http://www.telerik.com/fiddler)
 7.	[Ngrok]( https://ngrok.com/)
