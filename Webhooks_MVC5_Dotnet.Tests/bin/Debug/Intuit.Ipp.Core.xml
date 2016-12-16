@@ -106,7 +106,7 @@
         </member>
         <member name="P:Intuit.Ipp.Core.Configuration.MinorVersion.Qbd">
             <summary>
-            Gets or sets the minorVersion for QuickBooks Desktop Rest Service.
+            Gets or sets the minorVersion for QuickBooks Online Rest Service.
             </summary>
         </member>
         <member name="P:Intuit.Ipp.Core.Configuration.MinorVersion.Qbo">
@@ -169,6 +169,16 @@
             Custom serialization format.
             </summary>
         </member>
+        <member name="T:Intuit.Ipp.Core.Configuration.VerifierToken">
+            <summary>
+            VerifierToken for Webhooks 
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.Core.Configuration.VerifierToken.Value">
+            <summary>
+            Gets or sets the value of  Verifier token for Webhooks Service
+            </summary>        
+        </member>
         <member name="T:Intuit.Ipp.Core.Configuration.IppConfiguration">
             <summary>
             Ipp configuration.
@@ -197,6 +207,11 @@
         <member name="P:Intuit.Ipp.Core.Configuration.IppConfiguration.BaseUrl">
             <summary>
             Gets or sets the Base Urls like Pre-Production url's.
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.Core.Configuration.IppConfiguration.VerifierToken">
+            <summary>
+            Gets or sets the Webhooks Verifier token.
             </summary>
         </member>
         <member name="P:Intuit.Ipp.Core.Configuration.IppConfiguration.MinorVersion">
@@ -544,7 +559,7 @@
             (This assists Windows users when they use QuickBase HTML UI). When data containing such characters is queried, 
             the windows-1252 encoding will not change and will remain surrounded by the usual UTF8-encoded XML.
             If this data requires XML parsing, the windows-1252 encoded characters have to be re-encoded to UTF8 encoding.
-            This unique feature was recently removed from workplace, but still exists in QuickBase.
+            This unique feature was recently removed from appcenter, but still exists in QuickBase.
             </summary>
             <param name="encodedValue">a response from QuickBase that's mostly UTF8 encoded but has Windows-1252-encoded characters embedded in it</param>
             <returns>Returns the encoded response.</returns>

@@ -159,7 +159,6 @@
             <summary>
             Contains event handler for call back event.
             </summary>
-            <typeparam name="T">Generic Constraint </typeparam>
         </member>
         <member name="T:Intuit.Ipp.DataService.BatchProcessingCallback.BatchExecutionCompletedEventHandler">
             <summary>
@@ -442,7 +441,6 @@
             <summary>
             Retrieves entities changed since particular Date
             </summary>
-            <typeparam name="T">Entity to be retrieved</typeparam>
             <param name="entityList">List of entities to be retrieved</param>
             <param name="changedSince">date after which entities changed.</param>
         </member>
@@ -1163,6 +1161,11 @@
               Looks up a localized string similar to There was an error while communicating with the Ids Server..
             </summary>
         </member>
+        <member name="P:Intuit.Ipp.DataService.Properties.Resources.ThrottlingErroMessage">
+            <summary>
+              Looks up a localized string similar to There was an error due to throlling excceded
+            </summary>
+        </member>
         <member name="P:Intuit.Ipp.DataService.Properties.Resources.EmailAddressNotValid">
             <summary>
               Looks up a localized string similar to Email address is either not in valid format or is not provided.
@@ -1442,8 +1445,6 @@
             <summary>
             Calls the asynchronous method to get the required CDC.
             </summary>
-            <typeparam name="T">Generic Type T.</typeparam>
-            <param name="entity"> Entity type to Find</param>    
         </member>
         <member name="M:Intuit.Ipp.DataService.AsyncService.CreateIdsException(System.Exception)">
             <summary>
@@ -1499,7 +1500,6 @@
             <summary>
             CDC Async completed call back.
             </summary>
-            <typeparam name="T">The Entity type.</typeparam>
             <param name="sender">The sender.</param>
             <param name="eventArgs">The <see cref="T:Intuit.Ipp.Core.AsyncCallCompletedEventArgs"/> instance containing the event data.</param>
         </member>

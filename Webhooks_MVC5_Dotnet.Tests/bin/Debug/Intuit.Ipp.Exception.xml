@@ -305,6 +305,11 @@
               Looks up a localized string similar to Ids Server is too busy..
             </summary>
         </member>
+        <member name="P:Intuit.Ipp.Exception.Properties.Resources.ThrottleExceededExceptionDefaultMessage">
+            <summary>
+              Looks up a localized string similar to throttling is exceeded
+            </summary>
+        </member>
         <member name="P:Intuit.Ipp.Exception.Properties.Resources.ServiceExceptionDefaultMessage">
             <summary>
               Looks up a localized string similar to ServiceException was thrown..
@@ -1230,9 +1235,61 @@
             <param name="info">The System.Runtime.Serialization.SerializationInfo that holds the serialized object data about the exception being thrown.</param>
             <param name="context">The System.Runtime.Serialization.StreamingContext that contains contextual information about the source or destination.</param>
         </member>
+        <member name="T:Intuit.Ipp.Exception.ThrottleExceededException">
+            <summary>
+            Represents an exception raised when the Throttle is Exceeded and cannot process user requests.
+            </summary>
+        </member>
+        <member name="M:Intuit.Ipp.Exception.ThrottleExceededException.#ctor">
+            <summary>
+            Initializes a new instance of the ThrottleExceededException class.
+            </summary>
+        </member>
+        <member name="M:Intuit.Ipp.Exception.ThrottleExceededException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the ThrottleExceededException class.
+            </summary>
+            <param name="errorMessage">Error Message.</param>
+        </member>
+        <member name="M:Intuit.Ipp.Exception.ThrottleExceededException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the ThrottleExceededException class.
+            </summary>
+            <param name="errorMessage">Error Message</param>
+            <param name="innerException">Inner Exception.</param>
+        </member>
+        <member name="M:Intuit.Ipp.Exception.ThrottleExceededException.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the ThrottleExceededException class.
+            </summary>
+            <param name="errorMessage">Error Message</param>
+            <param name="errorCode">Error Code.</param>
+            <param name="source">Source of the exception.</param>
+        </member>
+        <member name="M:Intuit.Ipp.Exception.ThrottleExceededException.#ctor(System.String,System.String,System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the ThrottleExceededException class.
+            </summary>
+            <param name="errorMessage">Error Message</param>
+            <param name="errorCode">Error Code.</param>
+            <param name="source">Source of the exception.</param>
+            <param name="innerException">Inner Exception.</param>
+        </member>
+        <member name="M:Intuit.Ipp.Exception.ThrottleExceededException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the ThrottleExceededException class.
+            </summary>
+            <param name="info">The System.Runtime.Serialization.SerializationInfo that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The System.Runtime.Serialization.StreamingContext that contains contextual information about the source or destination.</param>
+        </member>
         <member name="T:Intuit.Ipp.Exception.ValidationException">
             <summary>
             TODO: Update summary.
+            </summary>
+        </member>
+        <member name="F:Intuit.Ipp.Exception.ValidationException.errorMessage">
+            <summary>
+            Error Message.
             </summary>
         </member>
         <member name="M:Intuit.Ipp.Exception.ValidationException.#ctor(System.Collections.Generic.IList{Intuit.Ipp.Exception.IdsError})">

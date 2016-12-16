@@ -313,6 +313,11 @@
             Gets the Service element.
             </summary>
         </member>
+        <member name="P:Intuit.Ipp.Utility.IppConfigurationSection.WebhooksService">
+            <summary>
+            Gets the WebhooksService element.
+            </summary>
+        </member>
         <member name="T:Intuit.Ipp.Utility.LinearRetryElement">
             <summary>
             Linear retry element.
@@ -556,6 +561,26 @@
         <member name="P:Intuit.Ipp.Utility.TicketElement.Ticket">
             <summary>
             Gets the ticket value.
+            </summary>
+        </member>
+        <member name="T:Intuit.Ipp.Utility.WebhooksVerifierElement">
+            <summary>
+            This class file contains WebhooksVerifierElement to process verification of webhooks token
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.Utility.WebhooksVerifierElement.Value">
+            <summary>
+            Gets verifier token for webhooks
+            </summary>
+        </member>
+        <member name="T:Intuit.Ipp.Utility.WebhooksServiceElement">
+            <summary>
+            WebhooksService
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.Utility.WebhooksServiceElement.WebhooksVerifier">
+            <summary>
+            Gets Webhooks Service verifierToken
             </summary>
         </member>
         <member name="T:Intuit.Ipp.Utility.NamespaceDoc">
