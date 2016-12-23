@@ -177,7 +177,6 @@ C:\Users\nshrivastava\Documents\Visual Studio 2013\Projects\IntuitDeveloper\Samp
 C:\Users\nshrivastava\Documents\GitHub\SampleApp-Webhooks-DotNet\Webhooks_MVC5_Dotnet.Tests\bin\Debug\Webhooks_MVC5_Dotnet.Tests.dll.config
 C:\Users\nshrivastava\Documents\GitHub\SampleApp-Webhooks-DotNet\Webhooks_MVC5_Dotnet.Tests\bin\Debug\Webhooks_MVC5_Dotnet.Tests.dll
 C:\Users\nshrivastava\Documents\GitHub\SampleApp-Webhooks-DotNet\Webhooks_MVC5_Dotnet.Tests\bin\Debug\Webhooks_MVC5_Dotnet.Tests.pdb
-C:\Users\nshrivastava\Documents\GitHub\SampleApp-Webhooks-DotNet\Webhooks_MVC5_Dotnet.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\nshrivastava\Documents\GitHub\SampleApp-Webhooks-DotNet\Webhooks_MVC5_Dotnet.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
 C:\Users\nshrivastava\Documents\GitHub\SampleApp-Webhooks-DotNet\Webhooks_MVC5_Dotnet.Tests\bin\Debug\Newtonsoft.Json.dll
 C:\Users\nshrivastava\Documents\GitHub\SampleApp-Webhooks-DotNet\Webhooks_MVC5_Dotnet.Tests\bin\Debug\System.Web.Helpers.dll
