@@ -218,3 +218,5 @@ C:\Users\nshrivastava\Documents\GitHub\SampleApp-Webhooks-DotNet\Webhooks_MVC5_D
 C:\Users\nshrivastava\Documents\GitHub\SampleApp-Webhooks-DotNet\Webhooks_MVC5_Dotnet.Tests\obj\Debug\Webhooks_MVC5_Dotnet.Tests.csprojResolveAssemblyReference.cache
 C:\Users\nshrivastava\Documents\GitHub\SampleApp-Webhooks-DotNet\Webhooks_MVC5_Dotnet.Tests\obj\Debug\Webhooks_MVC5_Dotnet.Tests.dll
 C:\Users\nshrivastava\Documents\GitHub\SampleApp-Webhooks-DotNet\Webhooks_MVC5_Dotnet.Tests\obj\Debug\Webhooks_MVC5_Dotnet.Tests.pdb
+C:\Users\nshrivastava\Documents\GitHub\SampleApp-Webhooks-DotNet\Webhooks_MVC5_Dotnet.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\nshrivastava\Documents\GitHub\SampleApp-Webhooks-DotNet\Webhooks_MVC5_Dotnet.Tests\bin\Debug\Webhooks_MVC5_Dotnet.dll.config
