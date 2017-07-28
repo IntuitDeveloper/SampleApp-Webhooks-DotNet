@@ -26,7 +26,7 @@ Therefore there are certain instances where we might forgo a more complicated im
 -----------------------
 In order to successfully run this sample app you need a few things:
 
-1.	Visual Studio 2013 with MVC5 and SQL server express 2012
+1.	Visual Studio 2015 with MVC5 and SQL server express 2012, .Net Framework 4.6.1
 2.	A [developer.intuit.com]( https://developer.intuit.com/) account
 3.	An app on [developer.intuit.com]( https://developer.intuit.com/) and the associated app token, consumer key, and consumer secret.
 4.	[QuickBooks .NET SDK]( https://developer.intuit.com/docs/0100_quickbooks_online/0400_tools/0005_accounting/0010.net_tools/0060_installing_the_.net_sdk) (already included in the sample app). You need to update/restore it using Nuget Package Manager
