@@ -1,3 +1,5 @@
+[![Sample Banner](views/Sample.png)][ss1]
+
 **SampleApp-Webhooks-DotNet**
 ---------------------------------
 
@@ -157,7 +159,4 @@ You can always right click the LocalDB table or the Azure table from from SQL Se
 Delete from OAuthTokens -  to delete the existing records and start afresh.
 
 
-
-
-
-
+[ss1]: https://help.developer.intuit.com/s/samplefeedback?cid=9010&repoName=SampleApp-Webhooks-DotNet
