@@ -1,12 +1,7 @@
-<<<<<<< HEAD
+
 [![Sample Banner](views/Sample.png)][ss1]
 
-**SampleApp-Webhooks-DotNet**
----------------------------------
-=======
 **SampleApp-Webhooks-DotNet for Oauth1 app**
----------------------------------------------
->>>>>>> 8906e3d6a57cacdcbbcef4d0edbde9ddc22d7cf5
 
 This sample app is meant to provide working examples of how to integrate your app with the Intuit Small Business ecosystem. Specifically, this sample application demonstrates the following:
 
