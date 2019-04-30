@@ -1,7 +1,7 @@
 
 [![Sample Banner](views/Sample.png)][ss1]
 
-**SampleApp-Webhooks-DotNet for Oauth1 app**
+**SampleApp-Webhooks-DotNet for Oauth1 app- Deprecated**
 
 This sample app is meant to provide working examples of how to integrate your app with the Intuit Small Business ecosystem. Specifically, this sample application demonstrates the following:
 
