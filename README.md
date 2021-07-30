@@ -1,5 +1,4 @@
-
-[![Sample Banner](views/Sample.png)][ss1]
+[![Rate your Sample](views/Ratesample.png)][ss1][![Yes](views/Thumbup.png)][ss2][![No](views/Thumbdown.png)][ss3]
 
 **SampleApp-Webhooks-DotNet for Oauth1 app- Deprecated**
 
@@ -157,6 +156,7 @@ It should look something like this.
 -----------------------
 You can always right click the LocalDB table or the Azure table from from SQL Server object explorer and run a new query-
 Delete from OAuthTokens -  to delete the existing records and start afresh.
-
-
-[ss1]: https://help.developer.intuit.com/s/samplefeedback?cid=9010&repoName=SampleApp-Webhooks-DotNet
+	
+[ss1]: #
+[ss2]: https://customersurveys.intuit.com/jfe/form/SV_9LWgJBcyy3NAwHc?check=Yes&checkpoint=SampleApp-Webhooks-DotNet&pageUrl=github
+[ss3]: https://customersurveys.intuit.com/jfe/form/SV_9LWgJBcyy3NAwHc?check=No&checkpoint=SampleApp-Webhooks-DotNet&pageUrl=github
